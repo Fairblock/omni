@@ -62,7 +62,7 @@ services:
     labels:
       e2e: true
     container_name: {{ .InstanceName }}
-    image: "ethereum/client-go:{{ $.GethTag }}"
+    image: "op_geth_precompile"
     command:
       - --config=/geth/config.toml
       # Flags not available via config.toml
